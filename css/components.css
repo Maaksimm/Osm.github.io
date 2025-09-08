@@ -1,0 +1,37 @@
+.link-span span{
+  position: relative;
+  display: inline-block;
+	line-height: 1.4;
+}
+.link-span span::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  transition: all 0.5s;
+  left: 0;
+  bottom: 0;
+  background-color:#06f0e4;
+}
+.link-span:hover span::after{
+  width: 100%;
+}
+.title {
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+}
+.element{
+	display: flex;
+	align-items: center;
+}
+.element::before{
+	content: '';
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image:url();
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-right: 50px;
+}
